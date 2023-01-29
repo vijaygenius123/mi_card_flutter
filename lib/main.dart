@@ -9,15 +9,25 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return  MaterialApp(
+    return MaterialApp(
       home: Scaffold(
-        backgroundColor: Colors.tealAccent,
+        backgroundColor: Colors.teal,
         body: SafeArea(
-          child: Container(
-            child: const Text(
-              'Hello World',
-              style: TextStyle(color: Colors.white, fontSize: 48),
-            ),
+          child:  Container(
+            padding: const EdgeInsets.symmetric(vertical: 12),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+              Container(width: 100, height: double.infinity, color: Colors.red,),
+              Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  Container(width: 100, height: 100, color: Colors.yellow,),
+                  Container(width: 100, height: 100, color: Colors.green,)
+                ],
+              ),
+              Container(width: 100, color: Colors.blue,)
+            ]),
           ),
         ),
       ),
