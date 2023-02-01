@@ -26,7 +26,7 @@ class MyApp extends StatelessWidget {
                       backgroundColor: Colors.greenAccent,
                      child: Container(
                        padding: EdgeInsets.all(16),
-                       child: Image.network('https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png', height: 20),
+                       child: Image.network('https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png'),
                      )
                   ),
                   Container(width: 100, height: 100, color: Colors.yellow,),
