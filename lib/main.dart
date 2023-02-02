@@ -13,30 +13,21 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         backgroundColor: Colors.teal,
         body: SafeArea(
-          child:  Container(
-            padding: const EdgeInsets.symmetric(vertical: 12),
-            child: Row(
-              mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: [
-              Container(width: 100, height: double.infinity, color: Colors.red,),
+          child:
               Column(
-                mainAxisAlignment: MainAxisAlignment.center,
-                children: [
+                children: const [
                   CircleAvatar(radius: 50,
-                      backgroundColor: Colors.greenAccent,
-                     child: Container(
-                       padding: EdgeInsets.all(16),
-                       child: Image.network('https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png'),
-                     )
+                     backgroundImage: NetworkImage("https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png")
                   ),
-                  Container(width: 100, height: 100, color: Colors.yellow,),
-                  Container(width: 100, height: 100, color: Colors.green,)
+                Text('Vijayaraghavan S', style: TextStyle(
+                  fontFamily: 'Pacifico',
+                  fontSize: 30,
+                  color: Colors.white,
+                  fontWeight: FontWeight.bold
+                )),
                 ],
               ),
-              Container(width: 100, color: Colors.blue,)
-            ]),
           ),
-        ),
       ),
     );
   }
