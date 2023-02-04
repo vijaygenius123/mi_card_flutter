@@ -14,11 +14,19 @@ class MyApp extends StatelessWidget {
         backgroundColor: Colors.teal,
         body: SafeArea(
           child: Container(
+            margin: EdgeInsets.symmetric(vertical: 20, horizontal: 6),
             padding: EdgeInsets.symmetric(vertical: 20),
+            decoration: BoxDecoration(
+              boxShadow:  [BoxShadow(color: Colors.teal.shade900,
+                  blurRadius: 6, spreadRadius: 2)],
+              color: Colors.white,
+              borderRadius: BorderRadius.all(Radius.circular(10)),
+            ),
             child: Column(
               children: [
                 CircleAvatar(
                     radius: 50,
+                    backgroundColor: Colors.tealAccent.shade400,
                     backgroundImage: NetworkImage(
                         "https://cdn.pixabay.com/photo/2013/07/13/10/07/man-156584__340.png")),
                 Text('Vijayaraghavan S',
